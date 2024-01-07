@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rule of Three</title>
     <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <div class="calculator">
@@ -14,8 +15,22 @@
         <div class="input-container">
             <div class="input-group">
                 <input type="number" id="num_one" placeholder="A">
+                <span>Is about to</span>
+                <input type="number" id="num_two" placeholder="B">
             </div>
+
+            <p class="input-text">Just like</p>
+            
+            <div class="input-group">
+                <input type="number" id="num_three" placeholder="C">
+                <span>Is about to</span>
+                <i class="fa-solid fa-rectangle-xmark"></i>
+            </div>
+
         </div>
+
+        <button id="calculate">Calculate</button>
+
     </div>
 
     <script src="./src/js/script.js"></script>
